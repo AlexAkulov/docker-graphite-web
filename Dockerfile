@@ -20,7 +20,7 @@ RUN	pip install --upgrade pip && pip install django==1.9 \
 	urllib3 \
 	whisper==1.0.2
 
-RUN	pip install git+https://github.com/graphite-project/graphite-web.git
+RUN	pip install git+https://github.com/graphite-project/graphite-web.git@587a313a045abee470785a8ea5b5edbdcce2da34
 
 RUN	addgroup -S graphite && \
 	adduser -S graphite -G graphite && \
